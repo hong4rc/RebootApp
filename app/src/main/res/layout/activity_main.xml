@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dialogMargin"
+    android:minWidth="@dimen/dialogMinWidth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:onClick="onAboutClick"
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/aboutMinHeight"
+            android:orientation="vertical"
+            android:padding="@dimen/aboutPadding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/aboutTitlePaddingBottom"
+                android:text="@string/about_author"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_author_summary"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerHeight"
+            android:background="@color/dividerBackgroundColor"/>
+
+        <TextView
+            android:onClick="onShutdownClick"
+            android:id="@+id/shutdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/itemMinHeight"
+            android:padding="@dimen/itemPadding"
+            android:text="@string/shutdown"/>
+
+        <TextView
+            android:onClick="onRebootClick"
+            android:id="@+id/reboot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/itemMinHeight"
+            android:padding="@dimen/itemPadding"
+            android:text="@string/reboot"/>
+
+        <TextView
+            android:onClick="onSoftRebootClick"
+            android:id="@+id/soft_reboot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/itemMinHeight"
+            android:padding="@dimen/itemPadding"
+            android:text="@string/soft_reboot"/>
+
+        <TextView
+            android:onClick="onRebootRecoveryClick"
+            android:id="@+id/reboot_recovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/itemMinHeight"
+            android:padding="@dimen/itemPadding"
+            android:text="@string/reboot_recovery"/>
+
+        <TextView
+            android:onClick="onRebootBootloaderClick"
+            android:id="@+id/reboot_bootloader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/itemMinHeight"
+            android:padding="@dimen/itemPadding"
+            android:text="@string/reboot_bootloader"/>
+
+        <TextView
+            android:onClick="onRebootSafeModeClick"
+            android:id="@+id/reboot_safe_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/itemMinHeight"
+            android:padding="@dimen/itemPadding"
+            android:text="@string/reboot_safe_mode"/>
+    </LinearLayout>
+</LinearLayout>
